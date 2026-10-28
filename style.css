@@ -52,7 +52,7 @@ background-color: #ffffcc;
   }
 #checkout{
  background-color: var(--orange);
- 
+ width: 100%;
 }
 
   <\style>
