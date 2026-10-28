@@ -22,7 +22,7 @@ background-color: #ffffcc;
     
   }
   #search-button{
-   background-color: #e5de00;
+   background-color: var(--orange);
     height: 35px;
   border-radius: 5px;
 
@@ -51,7 +51,7 @@ background-color: #ffffcc;
     
   }
 #checkout{
- background-color: #e5de00;
+ background-color: var(--orange);
  
 }
 
