@@ -1,4 +1,10 @@
 <style>
+:root{
+ --orange: #ff9900;
+}
+button{
+ background-color: #ff9900;
+}
   *{
     
   margin: 0;
