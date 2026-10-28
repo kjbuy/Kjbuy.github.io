@@ -1,8 +1,10 @@
 <style>
 :root{
- --orange: #ffc814;
+ --orange: #ffd814;
 }
-
+button{
+ background-color: #ff9900;
+}
   *{
     
   margin: 0;
@@ -48,9 +50,20 @@ background-color: #ffffcc;
   
     
   }
+
+  .checkout-div{
+    display: flex;
+    width=100%;
+    justify-content: center;
+  }
 #checkout{
  background-color: var(--orange);
- width: 100%;
+  width: 70%;
+  height: 35px;
+  border-radius: 8px;
+ 
 }
 
   <\style>
+
+
