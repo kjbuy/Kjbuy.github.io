@@ -16,6 +16,7 @@ background-color: #ffffcc;
     
   }
   #search-button{
+   background-color: #e5de00;
     height: 35px;
   border-radius: 5px;
 
@@ -43,5 +44,9 @@ background-color: #ffffcc;
   
     
   }
+#checkout{
+ background-color: #e5de00;
+ 
+}
 
   <\style>
