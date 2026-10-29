@@ -35,6 +35,10 @@
 
   
   <body>
+    <div class="content">
+      
+      
+    </div>
    
       
     </div>
@@ -52,6 +56,12 @@
           <script>
  //   alert("You clicked the button!");
   popup();
+            const content=document.querySelector(".content");
+            const image=document.createElement("img");
+            image.src="images";
+            image.alt="solar";
+       
+            content.appendChild(image);
             const checkout=document.querySelector("#checkout");
             checkout.addEventListener('click',popup);
   </script>
