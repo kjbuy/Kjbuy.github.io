@@ -1,6 +1,6 @@
 const allProducts = [
   { name: "jinko350", image: "jinko350", price: 125000, rating: "⭐️⭐️⭐️⭐️⭐️" },
-  { name: "jinko400", image: "jinko400", price: 141000, rating: "⭐️⭐️⭐️⭐️⭐️" },
+  { name: "jinko400.PNG", image: "jinko400", price: 141000, rating: "⭐️⭐️⭐️⭐️⭐️" },
   { name: "jinko450", image: "jinko450", price: 166500, rating: "⭐️⭐️⭐️⭐️" },
   { name: "jinko500", image: "jinko500", price: 187000, rating: "⭐️⭐️⭐️⭐️⭐️" },
   { name: "jinko550", image: "jinko550", price: 212500, rating: "⭐️⭐️⭐️⭐️" },
