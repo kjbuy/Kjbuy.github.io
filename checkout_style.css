@@ -1,0 +1,23 @@
+.parent{
+display:flex;
+justify-content: space-between;
+
+}
+#pay{
+
+display: flex;
+justify-content: center;
+
+
+
+}
+#cart{
+}
+
+.pay_button{
+width:80%;
+background-color:#25D366;
+border-radius:10px;
+color: #ffffff;
+margin-top: 10px;
+}

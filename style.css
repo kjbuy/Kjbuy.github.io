@@ -2,6 +2,7 @@
 :root{
  --orange: #ffd814;
 }
+
 button{
  background-color: #ff9900;
 }
@@ -22,7 +23,9 @@ background-color: #ffffcc;
     
   }
   #search-button{
-   background-color: var(--orange);
+
+
+   background-color: var(--orange,#ffd814);
     height: 35px;
   border-radius: 5px;
 
@@ -55,6 +58,8 @@ background-color: #ffffcc;
     display: flex;
     width=100%;
     justify-content: center;
+position: sticky;
+bottom: 0;
   }
 #checkout{
  background-color: #ffd814;
@@ -64,6 +69,11 @@ background-color: #ffffcc;
  
 }
 
+#header{
+position: fixed;
+z-index: 1000;
+top:0;
+width: 100%;
+left:0;}
+
   <\style>
-
-
