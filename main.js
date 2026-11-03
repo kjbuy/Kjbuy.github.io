@@ -21,7 +21,6 @@ product_card.style.grid_template_columns="1fr 1fr 1fr";
 
 const product_image=document.createElement("img");
 product_image.src="/IMAGES/" + item.image;
-alert(product_image.src);
 product_image.alt=item.name;
 product_image.style.height="100px";
 product_image.style.width="100px";
