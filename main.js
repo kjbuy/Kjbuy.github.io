@@ -20,8 +20,10 @@ product_card.classList.add("my-products");
 product_card.style.grid_template_columns="1fr 1fr 1fr";
 
 const product_image=document.createElement("img");
-product_image.src=item.name;
+product_image.src="/IMAGES/" + item.name + ".png";
 product_image.alt=item.name;
+product_image.height="100px";
+product_image.width="100px";
 product_image.style.borderRadius="10px";
 product_image.style.margin="10px";
 
