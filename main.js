@@ -49,7 +49,9 @@ const image=item.image;
 const names=document.createElement("div");
 names.textContent=item.name;
 const price=document.createElement("div");
-price.textContent=item.prices;
+price.innerHTML=`&#8358;${item.price}`;
+//price.textContent=item.price;
+
 const rating=document.createElement("div");
 rating.textContent=item.rating;
 
@@ -106,7 +108,7 @@ try{
 for(let counter=0;counter < item_class.length; counter++){
 
 const searchee=item_class[counter].querySelector("div").children[0].textContent;
-alert(searchee);
+
 if(searchee.includes(searchBox.value)){
 item_class[counter].style.backgroundColor="#f1ffcc";
 item_class[counter].style.display="";
