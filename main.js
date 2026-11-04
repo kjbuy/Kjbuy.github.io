@@ -11,18 +11,26 @@ products.style.maxWidth="1200px";
 products.style.margin="0 auto";
 products.style.backgroundColor="#ffcccf";
 products.style.gap="14px";
-products.style.alignItems="center";
+
+
 
 
 allProducts.forEach((item)=>{
 
 const product_card=document.createElement("div");
-product_card.style.display="grid";
+product_card.style.display="flex";
+product_card.style.flexGrow="1";
+product_card.style.justify_content="center";
 product_card.classList.add("my-products");
+product_card.style.alignItems="center";
+product_card.style.flexDirection="column";
+product_card.style.width="100%";
 const product_image=document.createElement("img");
+product_image.style.objectFit="cover";
 product_image.src="/IMAGES/" + item.image;
+product_image.style.maxWidth="250px";
 product_image.alt=item.name;
-product_image.style.height="160px";
+product_image.style.height="80%";
 product_image.style.width="100px";
 product_image.style.borderRadius="10px";
 product_image.style.margin="10px";
@@ -34,6 +42,7 @@ product_card.appendChild(product_image);
 
 
 const container2=document.createElement("div");
+container2.style.alignItems="center";
 
 const names=document.createElement("div");
 names.textContent=item.name;
