@@ -11,6 +11,7 @@ products.style.maxWidth="1200px";
 products.style.margin="0 auto";
 products.style.backgroundColor="#ffcccf";
 products.style.gap="14px";
+products.style.alignItems="center";
 
 
 allProducts.forEach((item)=>{
