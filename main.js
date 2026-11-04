@@ -49,7 +49,7 @@ const image=item.image;
 const names=document.createElement("div");
 names.textContent=item.name;
 const price=document.createElement("div");
-price.textContent=item.price;
+price.textContent=item.prices;
 const rating=document.createElement("div");
 rating.textContent=item.rating;
 
