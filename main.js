@@ -5,7 +5,7 @@ const products=document.querySelector(".content");
 
 products.style.display="grid";
 const gapSize = 20;
-products.style.gridTemplateColumns = "repeat(5,minmax(0,1fr))";
+products.style.gridTemplateColumns = "repeat(auto-fit,minmax(220,1fr))";
 
 products.style.backgroundColor="#ffcccf";
 products.style.display="grid";
