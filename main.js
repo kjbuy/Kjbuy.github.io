@@ -20,7 +20,6 @@ product_card.style.display="grid";
 product_card.classList.add("my-products");
 const product_image=document.createElement("img");
 product_image.src="/IMAGES/" + item.image;
-  alert(product_image.src);
 product_image.alt=item.name;
 product_image.style.height="160px";
 product_image.style.width="100px";
