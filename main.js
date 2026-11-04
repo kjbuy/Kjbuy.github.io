@@ -23,7 +23,7 @@ const product_image=document.createElement("img");
 product_image.src="/IMAGES/" + item.image;
   alert(product_image.src);
 product_image.alt=item.name;
-product_image.style.height="100px";
+product_image.style.height="160px";
 product_image.style.width="100px";
 product_image.style.borderRadius="10px";
 product_image.style.margin="10px";
