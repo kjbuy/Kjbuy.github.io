@@ -6,9 +6,9 @@ const products=document.querySelector(".content");
 products.style.display="grid";
 const gapSize = 20;
 products.style.gridTemplateColumns = "repeat(auto-fit,minmax(220px,1fr))";
-product.style.width="80%";
-product.style.maxWidth="1200px";
-product.style.margin="0 auto";
+products.style.width="80%";
+products.style.maxWidth="1200px";
+products.style.margin="0 auto";
 products.style.backgroundColor="#ffcccf";
 products.style.gap="14px";
 
@@ -185,4 +185,3 @@ catch (error){
 alert(""+error);}
 
 }
-
