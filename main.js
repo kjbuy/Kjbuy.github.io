@@ -6,9 +6,10 @@ const products=document.querySelector(".content");
 products.style.display="grid";
 const gapSize = 20;
 products.style.gridTemplateColumns = "repeat(auto-fit,minmax(220px,1fr))";
-
+product.style.width="80%";
+product.style.maxWidth="1200px";
+product.style.margin="0 auto";
 products.style.backgroundColor="#ffcccf";
-products.style.display="grid";
 products.style.gap="14px";
 
 
@@ -17,10 +18,6 @@ allProducts.forEach((item)=>{
 const product_card=document.createElement("div");
 product_card.style.display="grid";
 product_card.classList.add("my-products");
-product_card.style.gridTemplateColumns="repeat(auto-fit,minmax(220px,1fr))";
-product_card.style.width="80%";
-product_card.style.maxWidth="1200px";
-  product_card.style.margin="0 auto";
 const product_image=document.createElement("img");
 product_image.src="/IMAGES/" + item.image;
   alert(product_image.src);
