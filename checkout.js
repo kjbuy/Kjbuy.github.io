@@ -20,8 +20,8 @@ const image_div=document.createElement("div");
 const imag=document.createElement("img");
 imag.src="/IMAGES/" + item.image;
 imag.alt=item.name;
-img.style.height="100px";
-img.style.width="100px";
+imag.style.height="100px";
+imag.style.width="100px";
 image_div.appendChild(imag);
 card.appendChild(image_div);
 
