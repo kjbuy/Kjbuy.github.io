@@ -5,7 +5,7 @@ const products=document.querySelector(".content");
 
 products.style.display="grid";
 const gapSize = 20;
-products.style.gridTemplateColumns = "repeat(auto-fit,minmax(220,1fr))";
+products.style.gridTemplateColumns = "repeat(auto-fit,minmax(220px,1fr))";
 
 products.style.backgroundColor="#ffcccf";
 products.style.display="grid";
@@ -17,8 +17,10 @@ allProducts.forEach((item)=>{
 const product_card=document.createElement("div");
 product_card.style.display="grid";
 product_card.classList.add("my-products");
-product_card.style.grid_template_columns="1fr 1fr 1fr";
-
+product_card.style.gridTemplateColumns="repeat(auto-fit,minmax(220px,1fr))";
+product_card.style.width="80%";
+product_card.style.maxWidth="1200px";
+  product_card.style.margin="0 auto";
 const product_image=document.createElement("img");
 product_image.src="/IMAGES/" + item.image;
   alert(product_image.src);
@@ -35,9 +37,7 @@ product_card.appendChild(product_image);
 
 
 const container2=document.createElement("div");
-  container2.style.width="80%";
-container2.style.maxWidth="1200px";
-  container2.style.margin="0 auto";
+
 const names=document.createElement("div");
 names.textContent=item.name;
 const price=document.createElement("div");
