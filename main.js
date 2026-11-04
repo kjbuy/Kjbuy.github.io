@@ -35,7 +35,7 @@ product_card.appendChild(product_image);
 
 
 const container2=document.createElement("div");
-
+container2.maxWidth="1200px";
 const names=document.createElement("div");
 names.textContent=item.name;
 const price=document.createElement("div");
