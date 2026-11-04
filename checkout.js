@@ -19,8 +19,9 @@ card.style.backgroundColor="#fafafa";
 const image_div=document.createElement("div");
 const imag=document.createElement("img");
 imag.src="/IMAGES/" + item.image;
-alert(imag.src);
 imag.alt=item.name;
+img.style.height="100px";
+img.style.widtg="100px";
 image_div.appendChild(imag);
 card.appendChild(image_div);
 
