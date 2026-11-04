@@ -9,7 +9,7 @@ products.style.gridTemplateColumns = "repeat(auto-fit,minmax(220,1fr))";
 
 products.style.backgroundColor="#ffcccf";
 products.style.display="grid";
-products.style.gap="30px";
+products.style.gap="14px";
 
 
 allProducts.forEach((item)=>{
