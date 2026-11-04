@@ -134,7 +134,7 @@ all_orders.push(my_objects[`my_orders${current_order_id}`]={name: names, prices:
 
 add_cart_button.style.backgroundColor="#ffcc00";
 add_cart.textContent="";
-add_cart.display="flex";
+add_cart.style.display="flex";
 add_cart.style.justifyContent="space-between";
 
 
