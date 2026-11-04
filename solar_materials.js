@@ -10,7 +10,7 @@ const allProducts = [
   {
     name: "500W Itel Power Tank",
     image: "itel500.PNG",
-    price: 125000,
+    price: 285000
     rating: "",
     description: "500W Itel portable power tank for convenient electricity supply and backup power."
   },
