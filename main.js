@@ -6,10 +6,10 @@ const products=document.querySelector(".content");
 products.style.display="grid";
 const gapSize = 20;
 products.style.gridTemplateColumns = "repeat(auto-fit,minmax(220px,1fr))";
-products.style.width="80%";
+products.style.width="95%";
 products.style.maxWidth="1200px";
 products.style.margin="0 auto";
-products.style.backgroundColor="#ffcccf";
+products.style.backgroundColor="#dddddd";
 products.style.gap="14px";
 
 
@@ -28,10 +28,10 @@ product_card.style.width="100%";
 const product_image=document.createElement("img");
 product_image.style.objectFit="cover";
 product_image.src="/IMAGES/" + item.image;
-product_image.style.maxWidth="250px";
+product_image.style.maxWidth="5000px";
 product_image.alt=item.name;
-product_image.style.height="80%";
-product_image.style.width="100px";
+product_image.style.height="100%";
+product_image.style.width="100%";
 product_image.style.borderRadius="10px";
 product_image.style.margin="10px";
 
@@ -44,10 +44,13 @@ product_card.appendChild(product_image);
 const container2=document.createElement("div");
 container2.style.alignItems="center";
 
+const image=item.image;
+
 const names=document.createElement("div");
 names.textContent=item.name;
 const price=document.createElement("div");
-price.textContent=item.price;
+price.innerHTML=`&#8358;${item.price}`;
+//price.textContent=item.price;
 
 const rating=document.createElement("div");
 rating.textContent=item.rating;
@@ -58,7 +61,7 @@ const add_cart_button = document.createElement("button");
 add_cart_button.textContent="Add to cart";
 add_cart_button.style.backgroundColor="#ffd814";
 
-add_cart_button.addEventListener("click",()=>{addToCart(item.name,item.price,add_cart_button,add_cart);});
+add_cart_button.addEventListener("click",()=>{addToCart(item.name,item.price,item.image,add_cart_button,add_cart);});
 
 
 add_cart_button.style.borderRadius="3px";
@@ -122,14 +125,14 @@ alert("error"+ err);
 
 
 
-function addToCart(names,price,add_cart_button,add_cart){
+function addToCart(names,price,images,add_cart_button,add_cart){
 
 try{
 let current_order_id=id;
 
 alert(`${names} added to cart`);
 
-all_orders.push(my_objects[`my_orders${current_order_id}`]={name: names, prices: price});
+all_orders.push(my_objects[`my_orders${current_order_id}`]={name: names, prices: price,image: images});
 
 add_cart_button.style.backgroundColor="#ffcc00";
 add_cart.textContent="";

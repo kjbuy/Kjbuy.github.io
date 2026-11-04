@@ -18,7 +18,8 @@ card.style.margin="10px";
 card.style.backgroundColor="#fafafa";
 const image_div=document.createElement("div");
 const imag=document.createElement("img");
-imag.src=item.name;
+imag.src="/IMAGES/" + item.image;
+alert(imag.src);
 imag.alt=item.name;
 image_div.appendChild(imag);
 card.appendChild(image_div);
@@ -28,11 +29,17 @@ name_div.textContent="NAME: " + item.name;
 card.appendChild(name_div);
 
 const price_div=document.createElement("div");
-price_div.textContent="UNIT PRICE: " + item.prices;
-card.appendChild(price_div);
 
+price_div.innerHTML=`UNIT PRICE: &#8358;${item.prices}`;
+
+//price_div.textContent="UNIT PRICE: " + item.prices;
+
+
+card.appendChild(price_div);
 const quantity_div=document.createElement("div");
 quantity_div.textContent="QUANTITY: " + item.quantity;
+
+
 card.appendChild(quantity_div);
 
 cart_page.appendChild(card);
