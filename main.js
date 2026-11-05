@@ -111,7 +111,7 @@ const searchee=item_class[counter].querySelector("div").children[0].textContent;
 alert(searchee);
 if(searchee.includes(searchBox.value)){
 item_class[counter].style.backgroundColor="#f1ffcc";
-item_class[counter].style.display="";
+item_class[counter].style.display="flex";
 
 }
 else{
