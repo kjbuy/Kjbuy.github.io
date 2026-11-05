@@ -1,6 +1,12 @@
 let all_orders=[];
 let my_objects={};
 let id=1;
+const naira_format=new Intl.NumberFormat("en-NG",{
+  style: "currency",
+  currency: "NGN",
+  maximumFractionDigits: 0,
+  minimumFractionDigits: 0
+});
 const products=document.querySelector(".content");
 
 products.style.display="grid";
@@ -49,7 +55,7 @@ const image=item.image;
 const names=document.createElement("div");
 names.textContent=item.name;
 const price=document.createElement("div");
-price.innerHTML=`&#8358;${item.price}`;
+price.innerHTML=`${naira_format.format(item.price)}`;
 //price.textContent=item.price;
 
 const rating=document.createElement("div");
