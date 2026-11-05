@@ -7,7 +7,7 @@ let address=document.querySelector("#address");
 let phone=document.querySelector("#phone");
 
 const cart_page=document.querySelector("#cart");
-const pay_button=document.querySelector("#pay_button");
+const pay_button=document.querySelector(".pay_button");
 let order=JSON.parse(localStorage.getItem("my_cart"));
 
 
