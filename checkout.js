@@ -38,7 +38,7 @@ card.appendChild(name_div);
 
 const price_div=document.createElement("div");
 
-price_div.innerHTML=`UNIT PRICE: &#8358;${item.prices}`;
+price_div.innerHTML=`UNIT PRICE: ${naira_format.format(item.prices)}`;
 
 //price_div.textContent="UNIT PRICE: " + item.prices;
 
