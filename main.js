@@ -108,7 +108,7 @@ try{
 for(let counter=0;counter < item_class.length; counter++){
 
 const searchee=item_class[counter].querySelector("div").children[0].textContent;
-if(String(searchee.toLowerCase()).includes(searchBox.value.toLowerCase()){
+if(String(searchee.toLowerCase().includes(searchBox.value.toLowerCase()){
 item_class[counter].style.backgroundColor="#f1ffcc";
 item_class[counter].style.display="flex";
 
