@@ -63,6 +63,7 @@ total_div.innerHTML=`TOTAL: &#8358;${total}`;
 cart_page.appendChild(total_div);
 
 pay_button.addEventListener("click",()=>{
+  alert("whatsapp");
 
 let message = `Hello kjBuy,
 
