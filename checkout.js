@@ -7,7 +7,6 @@ const naira_format=new Intl.NumberFormat("en-NG",{
   maximumFractionDigits: 0,
   minimumFractionDigits: 0
 });
-alert(naira_format.format("2000000"));
 let name=document.querySelector("#name");
 
 
@@ -55,8 +54,9 @@ cart_page.appendChild(card);
 
 total += (item.prices * item.quantity);
 
-selected_items += `🛒NAME: ${item.name}
-PRICE: ${item.prices}
+selected_items += `
+🛒NAME: ${item.name}
+PRICE: ${naira_format.format(item.prices)}
 QUANTITY: ${item.quantity}`;
 
 });
@@ -67,7 +67,7 @@ QUANTITY: ${item.quantity}`;
 
 
 const total_div=document.createElement("div");
-total_div.innerHTML=`TOTAL: &#8358;${total}`;
+total_div.innerHTML=`TOTAL: ${naira_format.format(total)}`;
 cart_page.appendChild(total_div);
 
 pay_button.addEventListener("click",()=>{
@@ -79,7 +79,7 @@ I would like to place an order for the following items:
 
 ${selected_items}
 
-TOTAL: ₦${total}
+TOTAL: ${naira_format.format(total)}
 
 DELIVERY DETAILS:
 CUSTOMER NAME: ${name.value}
