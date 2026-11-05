@@ -1,5 +1,13 @@
 let total=0;
 let selected_items="";
+
+const naira_format=new Intl.NumberFormat("en-NG",{
+  style: "currency",
+  currency: "NGN",
+  maximumFractionDigits: 0;
+  minimumFractionDigits: 0
+});
+alert(naira_format.format("2000000"));
 let name=document.querySelector("#name");
 
 
