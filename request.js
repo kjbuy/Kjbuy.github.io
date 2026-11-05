@@ -23,7 +23,7 @@ document.getElementById('sendRequestBtn').addEventListener('click', function() {
 
   // 5. Encode the text so spaces and symbols work perfectly in a browser URL
   const encodedMessage = encodeURIComponent(message);
-  const whatsappUrl = `https://wa.me{phoneNumber}?text=${encodedMessage}`;
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
   // 6. Open WhatsApp in a new browser tab
   window.open(whatsappUrl, '_blank');
