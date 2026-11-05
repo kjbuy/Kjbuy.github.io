@@ -1,28 +1,30 @@
-document.getElementById("sendRequestBtn").addEventListener("click", () => {
-  const customerInput = document.getElementById("customRequestDetails").value.trim();
-  const selectedIntent = document.querySelector('input[name="msgIntent"]:checked').value;
-
-  // Validation: Check if the textarea has text
-  if (!customerInput) {
-    alert("Please enter the product name or details before sending.");
+document.getElementById('sendRequestBtn').addEventListener('click', function() {
+  // 1. Get the user's typed message
+  const userInput = document.getElementById('productRequestInput').value.trim();
+  
+  if (userInput === "") {
+    alert("Please type the name or description of the product you need!");
     return;
   }
 
-  let finalMessage = "";
-
-  // Structure the custom message templates cleanly based on choice selections
-  if (selectedIntent === "check") {
-    finalMessage = `Hello kjBuy,\n\nI want to check if this product is available or if you can source it for me:\n\n📝 DETAILS: ${customerInput}\n\nPlease let me know the availability and current price status. Thanks!`;
+  // 2. Determine which radio option they selected
+  const requestType = document.querySelector('input[name="requestType"]:checked').value;
+  
+  // 3. Draft the predefined message templates based on the choice
+  let message = "";
+  if (requestType === "available") {
+    message = `Hello KjBuy, I want to check the availability of this product:\n\n${userInput}`;
   } else {
-    finalMessage = `Hello kjBuy,\n\nI want to buy this product and would like to request a custom order order placement:\n\n📝 DETAILS: ${customerInput}\n\nPlease verify details and provide payment terms. Thank you!`;
+    message = `Hello KjBuy, I would like to place a custom order for this material:\n\n${userInput}`;
   }
 
-  // Your verified WhatsApp target link endpoint format
-  const whatsappNumber = "2348101509431";
-  
-  // Wrap the final content string using safe URI converters to keep new lines clean on GitHub
-  const formattedRedirectUrl = "https://wa.me" + whatsappNumber + "?text=" + encodeURIComponent(finalMessage);
+  // 4. Your WhatsApp number formatted for wa.me (No plus sign, no spaces)
+  const phoneNumber = "2348101509431"; 
 
-  // Send client smoothly to WhatsApp app interface
-  window.location.href = formattedRedirectUrl;
+  // 5. Encode the text so spaces and symbols work perfectly in a browser URL
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappUrl = `https://wa.me{phoneNumber}?text=${encodedMessage}`;
+
+  // 6. Open WhatsApp in a new browser tab
+  window.open(whatsappUrl, '_blank');
 });
