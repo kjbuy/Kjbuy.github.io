@@ -1,28 +1,28 @@
-document.getElementById("submitRequestBtn").addEventListener("click", () => {
-  const requestInput = document.getElementById("productRequestInput").value.trim();
-  const requestType = document.querySelector('input[name="requestType"]:checked').value;
+document.getElementById("sendRequestBtn").addEventListener("click", () => {
+  const customerInput = document.getElementById("customRequestDetails").value.trim();
+  const selectedIntent = document.querySelector('input[name="msgIntent"]:checked').value;
 
-  // Validation: Ensure the textarea isn't sent empty
-  if (!requestInput) {
-    alert("Please type the details of the product you are looking for.");
+  // Validation: Check if the textarea has text
+  if (!customerInput) {
+    alert("Please enter the product name or details before sending.");
     return;
   }
 
-  let baseIntro = "";
-  
-  // Adapt message intro structure depending on selected toggle choice
-  if (requestType === "available") {
-    baseIntro = "Hello kjBuy,\n\nI want to check if this product is currently available in your shop:\n";
+  let finalMessage = "";
+
+  // Structure the custom message templates cleanly based on choice selections
+  if (selectedIntent === "check") {
+    finalMessage = `Hello kjBuy,\n\nI want to check if this product is available or if you can source it for me:\n\n📝 DETAILS: ${customerInput}\n\nPlease let me know the availability and current price status. Thanks!`;
   } else {
-    baseIntro = "Hello kjBuy,\n\nI would like to place a custom sourcing order for the following material:\n";
+    finalMessage = `Hello kjBuy,\n\nI want to buy this product and would like to request a custom order order placement:\n\n📝 DETAILS: ${customerInput}\n\nPlease verify details and provide payment terms. Thank you!`;
   }
 
-  // Construct complete clean message body
-  const finalMessage = `${baseIntro}"${requestInput}"\n\nPlease let me know if you have it or can source it for me. Thank you!`;
-
-  // Process data safely using encodeURIComponent so line breaks map correctly in WhatsApp
-  const targetUrl = "https://wa.me" + encodeURIComponent(finalMessage);
+  // Your verified WhatsApp target link endpoint format
+  const whatsappNumber = "2348101509431";
   
-  // Forward customer smoothly to chat layout
-  window.location.href = targetUrl;
+  // Wrap the final content string using safe URI converters to keep new lines clean on GitHub
+  const formattedRedirectUrl = "https://wa.me" + whatsappNumber + "?text=" + encodeURIComponent(finalMessage);
+
+  // Send client smoothly to WhatsApp app interface
+  window.location.href = formattedRedirectUrl;
 });
