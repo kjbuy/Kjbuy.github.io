@@ -1,87 +1,171 @@
 
-const newProducts = [
+const allProducts = [
   {
     name: "Cola 3600 Plus Solar Power Station",
     image: "cola3600plus.PNG",
     price: 920000,
     rating: "",
-    description: "Cola 3600 Plus portable solar power station with 3.6kWh battery capacity and 2200W inverter output. Designed for reliable home and business backup power."
+    description: "Cola 3600 Plus portable solar power station designed for reliable backup electricity in homes and businesses."
+  },
+  {
+    name: "550W Jinko Solar Panel",
+    image: "jinko550.PNG",
+    price: 110000,
+    rating: "",
+    description: "550W Jinko solar panel for high-capacity solar power generation and residential or commercial installations."
   },
   {
     name: "Meco 1kWh 300W Solar Power Station",
     image: "meco1kwh300.PNG",
     price: 245000,
     rating: "",
-    description: "Meco portable solar power station featuring a 1kWh battery capacity and 300W power output. Suitable for powering small electronics, lighting, routers and other compatible devices."
+    description: "Meco portable solar power station featuring 1kWh battery capacity and 300W rated output. Suitable for lighting, routers, laptops and other compatible devices."
+  },
+  {
+    name: "Itel 500W Power Tank",
+    image: "itel500.PNG",
+    price: 285000,
+    rating: "",
+    description: "500W Itel portable power tank for convenient electricity supply and backup power."
   },
   {
     name: "Taico 500W Solar Generator",
     image: "taico500.PNG",
     price: 510000,
     rating: "",
-    description: "Taico 500W portable solar generator for convenient electricity supply and backup power. Suitable for everyday home and outdoor power applications."
+    description: "Taico 500W portable solar generator designed for convenient electricity supply, solar charging and backup power."
+  },
+  {
+    name: "500W Cola Solar Power Tank",
+    image: "cola500.PNG",
+    price: 1,
+    rating: "",
+    description: "500W Cola portable power tank for everyday power needs and backup electricity."
   },
   {
     name: "Cola 1000 Neo Solar Power Station",
     image: "cola1000neo.PNG",
     price: 270000,
     rating: "",
-    description: "Cola 1000 Neo portable power station with 1000Wh battery capacity and 300W inverter output. Ideal for lighting, routers, laptops and other low-power appliances."
+    description: "Cola 1000 Neo portable solar power station for convenient home backup electricity and powering compatible devices."
+  },
+  {
+    name: "650W Jinko Solar Panel",
+    image: "jinko650.PNG",
+    price: 125000,
+    rating: "",
+    description: "650W Jinko solar panel for high-power solar installations."
   },
   {
     name: "Kingon 300W Solar Generator with 2 Panels",
     image: "kingon300.PNG",
     price: 260000,
     rating: "",
-    description: "Kingon 300W portable solar generator supplied with two solar panels for convenient solar charging and backup electricity. Suitable for small household appliances and everyday power needs."
+    description: "Kingon 300W portable solar generator supplied with two solar panels for solar charging and backup electricity."
   },
   {
     name: "Meco 2kWh 500W Solar Power Station",
     image: "meco2kwh500.PNG",
     price: 520000,
     rating: "",
-    description: "Meco portable solar power station featuring 2kWh battery storage and 500W inverter output. Designed to provide backup electricity for compatible household electronics and appliances."
+    description: "Meco portable solar power station with 2kWh battery capacity and 500W rated output for compatible household electronics and appliances."
+  },
+  {
+    name: "400W Jinko Solar Panel",
+    image: "jinko400.PNG",
+    price: 141000,
+    rating: "",
+    description: "400W Jinko solar panel suitable for residential and commercial solar installations."
   },
   {
     name: "Cola 2000 Solar Power Station",
     image: "cola2000.PNG",
     price: 555000,
     rating: "",
-    description: "Cola 2000 portable power station with 2000Wh battery capacity and 1000W inverter output. Suitable for home backup power, electronics and compatible household appliances."
+    description: "Cola 2000 portable solar power station designed to provide convenient backup electricity for homes, offices and compatible electrical appliances. Suitable for everyday power needs and solar charging applications."
   },
   {
-    name: "Itel 500W Power Tank",
-    image: "itel500.PNG",
-    price: 290000,
+    name: "EcoFlow Power Tank",
+    image: "ecoflow.PNG",
+    price: 1,
     rating: "",
-    description: "Itel 500W all-in-one portable solar power station featuring a 1kWh LiFePO4 lithium battery, pure sine wave inverter and built-in MPPT solar charge controller. Provides convenient backup power for homes and offices."
+    description: "EcoFlow portable power station for convenient electricity and backup power."
   },
   {
     name: "Cola 1000 Pro Solar Power Station",
     image: "cola1000pro.PNG",
     price: 265000,
     rating: "",
-    description: "Cola 1000 Pro portable power station with 1000Wh battery capacity and 300W inverter output. A convenient backup electricity solution for lighting, laptops, routers and compatible devices."
+    description: "Cola 1000 Pro portable power station for backup electricity, lighting and compatible electronic devices."
+  },
+  {
+    name: "300W PX Solar Panel",
+    image: "px300.PNG",
+    price: 1,
+    rating: "",
+    description: "300W PX solar panel for solar electricity generation and residential applications."
   },
   {
     name: "Meco 1kWh 500W Solar Power Station",
     image: "meco1kwh500.PNG",
     price: 265000,
     rating: "",
-    description: "Meco portable solar power station with 1kWh battery capacity and 500W inverter output. Suitable for home backup electricity, electronics and compatible small appliances."
+    description: "Meco portable solar power station featuring 1kWh battery capacity and 500W rated output for compatible electronics and small appliances."
+  },
+  {
+    name: "63A POSMITH DC Circuit Breaker",
+    image: "posmith63.PNG",
+    price: 1,
+    rating: "",
+    description: "63A POSMITH DC circuit breaker for overcurrent protection in suitable DC electrical installations."
   },
   {
     name: "Cola 3600 Solar Power Station",
     image: "cola3600.PNG",
     price: 790000,
     rating: "",
-    description: "Cola 3600 portable solar power station with 3600Wh battery capacity and 1200W inverter output. Designed for larger backup power requirements in homes and businesses."
+    description: "Cola 3600 portable solar power station designed for larger backup electricity requirements in homes and businesses."
+  },
+  {
+    name: "150W Jinko Solar Panel",
+    image: "jinko150.PNG",
+    price: 1,
+    rating: "",
+    description: "150W Jinko solar panel for solar electricity generation and small solar installations."
   },
   {
     name: "Cola 1000 Plus Solar Power Station",
     image: "cola1000plus.PNG",
     price: 280000,
     rating: "",
-    description: "Cola 1000 Plus portable power station with 1000Wh battery capacity and 500W inverter output. Suitable for powering compatible household electronics, lighting and essential devices."
+    description: "Cola 1000 Plus portable power station for powering compatible household electronics, lighting and essential devices."
+  },
+  {
+    name: "3000W Cola Solar Power Tank",
+    image: "cola3000.PNG",
+    price: 1,
+    rating: "",
+    description: "3000W Cola portable power tank for backup electricity and portable power applications."
+  },
+  {
+    name: "1000W Itel Power Tank",
+    image: "itel1000.PNG",
+    price: 1,
+    rating: "",
+    description: "1000W Itel portable power tank for convenient electricity and backup supply."
+  },
+  {
+    name: "1000W Cola Solar Power Tank",
+    image: "colasolar1000.PNG",
+    price: 1,
+    rating: "",
+    description: "1000W Cola portable power tank for convenient electricity supply and backup power."
+  },
+  {
+    name: "2000W Cola Solar Power Tank",
+    image: "cola2000.JPG",
+    price: 1,
+    rating: "",
+    description: "2000W Cola portable power tank for convenient electricity supply and backup power."
   }
 ];
