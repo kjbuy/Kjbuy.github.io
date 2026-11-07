@@ -1,8 +1,7 @@
-
 const allProducts = [
   {
     name: "Cola 3600 Plus Solar Power Station",
-    image: "cola3600plus.PNG",
+    image: "cola3600plus.JPG",
     price: 920000,
     rating: "",
     description: "Cola 3600 Plus portable solar power station designed for reliable backup electricity in homes and businesses."
@@ -16,7 +15,7 @@ const allProducts = [
   },
   {
     name: "Meco 1kWh 300W Solar Power Station",
-    image: "meco1kwh300.PNG",
+    image: "meco1kwh300.JPG",
     price: 245000,
     rating: "",
     description: "Meco portable solar power station featuring 1kWh battery capacity and 300W rated output. Suitable for lighting, routers, laptops and other compatible devices."
@@ -30,7 +29,7 @@ const allProducts = [
   },
   {
     name: "Taico 500W Solar Generator",
-    image: "taico500.PNG",
+    image: "taico500.JPG",
     price: 510000,
     rating: "",
     description: "Taico 500W portable solar generator designed for convenient electricity supply, solar charging and backup power."
@@ -44,7 +43,7 @@ const allProducts = [
   },
   {
     name: "Cola 1000 Neo Solar Power Station",
-    image: "cola1000neo.PNG",
+    image: "cola1000neo.JPG",
     price: 270000,
     rating: "",
     description: "Cola 1000 Neo portable solar power station for convenient home backup electricity and powering compatible devices."
@@ -58,14 +57,14 @@ const allProducts = [
   },
   {
     name: "Kingon 300W Solar Generator with 2 Panels",
-    image: "kingon300.PNG",
+    image: "kingon300.JPG",
     price: 260000,
     rating: "",
     description: "Kingon 300W portable solar generator supplied with two solar panels for solar charging and backup electricity."
   },
   {
     name: "Meco 2kWh 500W Solar Power Station",
-    image: "meco2kwh500.PNG",
+    image: "meco2kwh500.JPG",
     price: 520000,
     rating: "",
     description: "Meco portable solar power station with 2kWh battery capacity and 500W rated output for compatible household electronics and appliances."
@@ -79,7 +78,7 @@ const allProducts = [
   },
   {
     name: "Cola 2000 Solar Power Station",
-    image: "cola2000.PNG",
+    image: "cola2000.JPG",
     price: 555000,
     rating: "",
     description: "Cola 2000 portable solar power station designed to provide convenient backup electricity for homes, offices and compatible electrical appliances. Suitable for everyday power needs and solar charging applications."
@@ -93,7 +92,7 @@ const allProducts = [
   },
   {
     name: "Cola 1000 Pro Solar Power Station",
-    image: "cola1000pro.PNG",
+    image: "cola1000pro.JPG",
     price: 265000,
     rating: "",
     description: "Cola 1000 Pro portable power station for backup electricity, lighting and compatible electronic devices."
@@ -107,7 +106,7 @@ const allProducts = [
   },
   {
     name: "Meco 1kWh 500W Solar Power Station",
-    image: "meco1kwh500.PNG",
+    image: "meco1kwh500.JPG",
     price: 265000,
     rating: "",
     description: "Meco portable solar power station featuring 1kWh battery capacity and 500W rated output for compatible electronics and small appliances."
@@ -121,7 +120,7 @@ const allProducts = [
   },
   {
     name: "Cola 3600 Solar Power Station",
-    image: "cola3600.PNG",
+    image: "cola3600.JPG",
     price: 790000,
     rating: "",
     description: "Cola 3600 portable solar power station designed for larger backup electricity requirements in homes and businesses."
@@ -135,7 +134,7 @@ const allProducts = [
   },
   {
     name: "Cola 1000 Plus Solar Power Station",
-    image: "cola1000plus.PNG",
+    image: "cola1000plus.JPG",
     price: 280000,
     rating: "",
     description: "Cola 1000 Plus portable power station for powering compatible household electronics, lighting and essential devices."
