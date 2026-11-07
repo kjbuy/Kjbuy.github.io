@@ -37,7 +37,7 @@ const allProducts = [
   {
     name: "500W Cola Solar Power Tank",
     image: "cola500.PNG",
-    price: 1,
+    price: 295000,
     rating: "",
     description: "500W Cola portable power tank for everyday power needs and backup electricity."
   },
@@ -86,7 +86,7 @@ const allProducts = [
   {
     name: "EcoFlow Power Tank",
     image: "ecoflow.PNG",
-    price: 1,
+    price: 340000,
     rating: "",
     description: "EcoFlow portable power station for convenient electricity and backup power."
   },
@@ -100,7 +100,7 @@ const allProducts = [
   {
     name: "300W PX Solar Panel",
     image: "px300.PNG",
-    price: 1,
+    price: 65000,
     rating: "",
     description: "300W PX solar panel for solar electricity generation and residential applications."
   },
@@ -114,7 +114,7 @@ const allProducts = [
   {
     name: "63A POSMITH DC Circuit Breaker",
     image: "posmith63.PNG",
-    price: 1,
+    price: 9500,
     rating: "",
     description: "63A POSMITH DC circuit breaker for overcurrent protection in suitable DC electrical installations."
   },
@@ -128,7 +128,7 @@ const allProducts = [
   {
     name: "150W Jinko Solar Panel",
     image: "jinko150.PNG",
-    price: 1,
+    price: 45000,
     rating: "",
     description: "150W Jinko solar panel for solar electricity generation and small solar installations."
   },
@@ -142,28 +142,28 @@ const allProducts = [
   {
     name: "3000W Cola Solar Power Tank",
     image: "cola3000.PNG",
-    price: 1,
+    price: 720000,
     rating: "",
     description: "3000W Cola portable power tank for backup electricity and portable power applications."
   },
   {
     name: "1000W Itel Power Tank",
     image: "itel1000.PNG",
-    price: 1,
+    price: 295000,
     rating: "",
     description: "1000W Itel portable power tank for convenient electricity and backup supply."
   },
   {
     name: "1000W Cola Solar Power Tank",
     image: "colasolar1000.PNG",
-    price: 1,
+    price: 230000,
     rating: "",
     description: "1000W Cola portable power tank for convenient electricity supply and backup power."
   },
   {
     name: "2000W Cola Solar Power Tank",
     image: "cola2000.JPG",
-    price: 1,
+    price: 580000,
     rating: "",
     description: "2000W Cola portable power tank for convenient electricity supply and backup power."
   }
