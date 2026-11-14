@@ -19,7 +19,7 @@ document.getElementById('sendRequestBtn').addEventListener('click', function() {
   }
 
   // 4. Your WhatsApp number formatted for wa.me (No plus sign, no spaces)
-  const phoneNumber = "2348101509431"; 
+  const phoneNumber = "2348085267621"; 
 
   // 5. Encode the text so spaces and symbols work perfectly in a browser URL
   const encodedMessage = encodeURIComponent(message);
