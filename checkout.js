@@ -91,6 +91,6 @@ Please confirm my order and send me your bank account details so I can make paym
 Thank you for choosing kjBuy.`;
 
 
-localStorage.clear();
+//localStorage.clear();
 window.location.href="https://wa.me/2348085267621?text=" + encodeURIComponent(message);
 });
