@@ -71,7 +71,7 @@ total_div.innerHTML=`TOTAL: ${naira_format.format(total)}`;
 cart_page.appendChild(total_div);
 
 pay_button.addEventListener("click",()=>{
-  alert("whatsapp");
+//  alert("whatsapp");
 
 let message = `Hello kjBuy,
 
