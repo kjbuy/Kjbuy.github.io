@@ -167,4 +167,5 @@ const allProducts = [
     rating: "",
     description: "2000W Cola portable power tank for convenient electricity supply and backup power."
   }
+  ...electricalProducts
 ];
