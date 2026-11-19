@@ -1,5 +1,26 @@
 const allProducts = [
   {
+    name: "itel 4kVA 24V Hybrid Solar Inverter",
+    image: "itel4kva.PNG",
+    price: 390000,
+    rating: "",
+    description: "itel 4kVA 24V hybrid solar inverter designed for reliable power conversion, solar charging and home or office backup electricity."
+  },
+  {
+    name: "itel 2.56kWh 24V Lithium Battery",
+    image: "itelbat2500.PNG",
+    price: 550000,
+    rating: "",
+    description: "itel 2.56kWh (100Ah, 25.6V) wall-mounted LiFePO4 lithium battery built for compatible 24V inverter systems and long-lasting backup power."
+  },
+  {
+    name: "itel 4kVA Hybrid Inverter + 2.56kWh Lithium Battery Bundle",
+    image: "itelBatInv2500/4000.PNG",
+    price: 920000,
+    rating: "",
+    description: "Complete itel backup power combo featuring a 4kVA 24V hybrid inverter and a 2.56kWh LiFePO4 lithium battery for homes and small businesses."
+  },
+  {
     name: "Cola 3600 Plus Solar Power Station",
     image: "cola3600plus.JPG",
     price: 920000,
