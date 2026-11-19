@@ -3,7 +3,7 @@ const electricalProducts = [
   {
     name: "1mm Devistar Red Cable",
     image: "devistar1mmRed.PNG",
-    price: 0,
+    price: 23000,
     rating: "",
     category: "Electrical",
     subCategory: "Cables",
@@ -13,7 +13,7 @@ const electricalProducts = [
   {
     name: "1mm Devistar Black Cable",
     image: "devistar1mmBlack.PNG",
-    price: 0,
+    price: 23000,
     rating: "",
     category: "Electrical",
     subCategory: "Cables",
@@ -23,7 +23,7 @@ const electricalProducts = [
   {
     name: "1.5mm Devistar Red Cable",
     image: "devistar1.5mmRed.PNG",
-    price: 0,
+    price: 33000,
     rating: "",
     category: "Electrical",
     subCategory: "Cables",
@@ -33,7 +33,7 @@ const electricalProducts = [
   {
     name: "1.5mm Devistar Black Cable",
     image: "devistar1.5mmBlack.PNG",
-    price: 0,
+    price: 33000,
     rating: "",
     category: "Electrical",
     subCategory: "Cables",
@@ -43,7 +43,7 @@ const electricalProducts = [
   {
     name: "1.5mm Devistar Green Cable",
     image: "devistar1.5mmGreen.PNG",
-    price: 0,
+    price: 33000,
     rating: "",
     category: "Electrical",
     subCategory: "Cables",
@@ -53,7 +53,7 @@ const electricalProducts = [
   {
     name: "2.5mm Devistar Red Cable",
     image: "devistar2.5mmRed.PNG",
-    price: 0,
+    price: 55000,
     rating: "",
     category: "Electrical",
     subCategory: "Cables",
@@ -63,7 +63,7 @@ const electricalProducts = [
   {
     name: "2.5mm Devistar Black Cable",
     image: "devistar2.5mmBlack.PNG",
-    price: 0,
+    price: 55000,
     rating: "",
     category: "Electrical",
     subCategory: "Cables",
@@ -73,7 +73,7 @@ const electricalProducts = [
   {
     name: "2.5mm Devistar Green Cable",
     image: "devistar2.5mmGreen.PNG",
-    price: 0,
+    price: 55000,
     rating: "",
     category: "Electrical",
     subCategory: "Cables",
