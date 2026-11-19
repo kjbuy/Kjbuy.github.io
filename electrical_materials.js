@@ -42,7 +42,7 @@ const electricalProducts = [
   },
   {
     name: "1.5mm Devistar Green Cable",
-    image: "devistar1.5mmGreen.PNG",
+    image: "devistar1.5mmGreen.JPG",
     price: 33000,
     rating: "",
     category: "Electrical",
