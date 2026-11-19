@@ -93,7 +93,7 @@ const allProducts = [
   {
     name: "400W Jinko Solar Panel",
     image: "jinko400.PNG",
-    price: 141000,
+    price: 69000,
     rating: "",
     description: "400W Jinko solar panel suitable for residential and commercial solar installations."
   },
