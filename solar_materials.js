@@ -15,7 +15,7 @@ const allProducts = [
   },
   {
     name: "itel 4kVA Hybrid Inverter + 2.56kWh Lithium Battery Bundle",
-    image: "itelBatInv2500/4000.PNG",
+    image: "itelBatInv2500:4000.PNG",
     price: 920000,
     rating: "",
     description: "Complete itel backup power combo featuring a 4kVA 24V hybrid inverter and a 2.56kWh LiFePO4 lithium battery for homes and small businesses."
