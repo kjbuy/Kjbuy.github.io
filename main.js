@@ -120,7 +120,10 @@ item_class[counter].style.display="flex";
 
 }
 else{
-item_class[counter].style.display="none";}
+item_class[counter].style.display="none";
+products.innerHTML = "<div style='text-align: center; padding: 50px 20px; width: 100%; font-family: sans-serif; color: #333;'><h3 style='font-size: 20px; margin: 0 0 8px 0; color: #111;'>No search matched</h3><p style='font-size: 15px; color: #666; margin: 0;'>Try checking your spelling or using different keywords.</p></div>";
+
+}
 
 }}
 
