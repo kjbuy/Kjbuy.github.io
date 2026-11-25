@@ -3,6 +3,16 @@
  --orange: #ffd814;
 }
 
+#request_section{
+nargin-top: 20px;
+
+}
+.pagination-container{
+margin-bottom: 50px;
+
+
+}
+
 button{
  background-color: #ff9900;
 }
@@ -14,7 +24,7 @@ button{
   .adds-popup{
 background-color: #ffffcc;
     margin:20px;
-    height: 100px;
+    height: 200px;
     
       }
   #searchbox{
@@ -58,9 +68,12 @@ background-color: #ffffcc;
     display: flex;
     width=100%;
     justify-content: center;
-position: sticky;
+position: fixed;
 bottom: 0;
+left:0;
+right:0;
   }
+
 #checkout{
  background-color: #ffd814;
   width: 70%;
@@ -76,4 +89,19 @@ top:0;
 width: 100%;
 left:0;}
 
+
+a{
+color: #ccffcc;
+
+}
+
+a:hover{background-color:#ffccff;
+color:#ccccff;
+}
+
+a:active{
+background-color:#ffffff;
+text-color:#ccccff;
+
+}
   <\style>
