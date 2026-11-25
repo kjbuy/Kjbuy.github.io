@@ -1,3 +1,7 @@
+let page=1;
+let item_to_display=10;
+
+
 let all_orders=[];
 let my_objects={};
 let id=1;
@@ -18,9 +22,9 @@ products.style.margin="0 auto";
 products.style.backgroundColor="#dddddd";
 products.style.gap="14px";
 
+displayItems();
 
-
-
+function displayItems(){
 allProducts.forEach((item)=>{
 
 const product_card=document.createElement("div");
@@ -86,6 +90,7 @@ container2.appendChild(add_cart);
 products.appendChild(product_card);
 
 });
+}
 
 const item_class = document.getElementsByClassName("my-products");
 
@@ -110,14 +115,14 @@ const item_length=item_class.length;
 
 function searchFunction(){
 try{
-
+let search_found=0;
 for(let counter=0;counter < item_class.length; counter++){
 
 const searchee=item_class[counter].querySelector("div").children[0].textContent;
 if(searchee.toLowerCase().includes(searchBox.value.toLowerCase())){
 item_class[counter].style.backgroundColor="#f1ffcc";
 item_class[counter].style.display="flex";
-
+search_found++;
 }
 else{
 item_class[counter].style.display="none";
@@ -125,7 +130,9 @@ item_class[counter].style.display="none";
 }
 
 }
-  
+if(search_found==0)
+{alert("No matching products found. Please use the Request Product button to let us know what you need.");}
+ 
 }
 
 catch (err) {
