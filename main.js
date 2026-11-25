@@ -1,8 +1,9 @@
 let page=1;
+let display_counter=10;
 let start_index=0;
-let items_to_display=5;
-let next_item=5;
-let next_page_container=document.querySelector("#next_page_div");
+let items_to_display=display_counter;
+let next_item=display_counter;
+let next_page_container=document.querySelector("#next_page");
 
 let paginated_array=[];
 let next_page=document.querySelector("#next_page");
@@ -32,7 +33,6 @@ products.style.gap="14px";
 displayItems(allProducts.slice(start_index,items_to_display));
 
 function nextPage(){
-alert(allProducts.length + " ,,," + items_to_display);
 
 if(allProducts.length>=items_to_display)
 {
@@ -42,7 +42,7 @@ const new_slice=allProducts.slice(start_index,items_to_display);
 displayItems(new_slice);
 }
 else{
-alert(allProducts.length + " Fullll " + items_to_display);
+alert("Reached end of cart");
 next_page_container.style.display="none";
 
 }
