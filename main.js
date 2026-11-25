@@ -1,6 +1,12 @@
 let page=1;
-let item_to_display=10;
+let start_index=0;
+let items_to_display=5;
+let next_item=5;
+let next_page_container=document.querySelector("#next_page_div");
 
+let paginated_array=[];
+let next_page=document.querySelector("#next_page");
+next_page.addEventListener("click",nextPage);
 
 let all_orders=[];
 let my_objects={};
@@ -22,10 +28,30 @@ products.style.margin="0 auto";
 products.style.backgroundColor="#dddddd";
 products.style.gap="14px";
 
-displayItems();
 
-function displayItems(){
-allProducts.forEach((item)=>{
+displayItems(allProducts.slice(start_index,items_to_display));
+
+function nextPage(){
+alert(allProducts.length + " ,,," + items_to_display);
+
+if(allProducts.length>=items_to_display)
+{
+start_index+=next_item;
+items_to_display+=next_item;
+const new_slice=allProducts.slice(start_index,items_to_display);
+displayItems(new_slice);
+}
+else{
+alert(allProducts.length + " Fullll " + items_to_display);
+next_page_container.style.display="none";
+
+}
+
+}
+
+
+function displayItems(array_to_display){
+array_to_display.forEach((item)=>{
 
 const product_card=document.createElement("div");
 product_card.style.display="flex";
