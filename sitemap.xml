@@ -4,7 +4,7 @@
     <loc>https://kjbuy.github.io</loc>
     <priority>1.0</priority>
   </url>
-  <url>
+  <url> 
     <loc>https://github.io</loc>
     <priority>0.8</priority>
   </url>
