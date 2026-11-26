@@ -222,7 +222,7 @@ my_objects[`my_orders${current_order_id}`].quantity=edit_quantity.value;
 
 localStorage.setItem("my_cart", JSON.stringify(all_orders));
 
-});
+}); 
 
 add_cart.appendChild(decrease_quantity);
 
