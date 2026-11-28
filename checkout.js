@@ -92,5 +92,9 @@ Thank you for choosing kjBuy.`;
 
 
 //localStorage.clear();
-window.location.href="https://wa.me/2348085267621?text=" + encodeURIComponent(message);
+if(name.value=="" || address.value=="" || number.value==""){alert("Please fill in the details");}
+else{
+window.location.href="https://wa.me/2348085267621?text=" + encodeURIComponent(message);}
+
+
 });
